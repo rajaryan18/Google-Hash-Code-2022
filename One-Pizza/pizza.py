@@ -1,4 +1,6 @@
-output = ''
+from operator import indexOf
+
+output = []
 
 files = ['a_an_example.txt', 'b_basic.txt', 'c_coarse.txt', 'd_difficult.txt', 'e_elaborate.txt']
 for file in files:
@@ -29,12 +31,12 @@ for file in files:
 
 
         #print(" ".join(list(map(str,ans))))
-        output = " ".join(list(map(str, ans)))
+        output.append(" ".join(list(map(str, ans))))
         f.close()
 
 
 files = ['a_an_example_out.txt', 'b_basic_out.txt', 'c_coarse_out.txt', 'd_difficult_out.txt', 'e_elaborate_out.txt']
 for file in files:
     with open(file, 'w') as fout:
-        fout.write(output)
+        fout.write(output[indexOf(files,file)])
         fout.close()
