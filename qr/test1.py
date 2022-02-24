@@ -1,8 +1,4 @@
-# Google Hash Code 2022, Qualification round
-# Meta Warriors
-files = []
-for file in files:
-    with open(file, 'r') as f:
+
 [c, p] = map(int, input().strip().split(" "))
 cbs = {}
 project = {}
@@ -83,19 +79,4 @@ for day in range(last_bb):
 # print(pname)
     # print(cbs)
     # print(project)
-# print(output)
-
-# print(n)
-keys = [key for key in output]
-n = len(keys)
-for key in output:
-    # print(key)
-    # print(output[key].join(" "))
-    if (output[key]==[None]):
-        n-=1
-
-print(n)
-print(keys)
-for key in output:
-    if(output[key] != [None]):
-        #write key, write contri
+print(output)

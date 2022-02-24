@@ -17,3 +17,6 @@ C++ 2
 WebChat 10 20 20 2
 Python 3
 HTML 3
+
+for i in range(last bb):
+    current project = <project name>
